@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){  
   int prixVoitureHT;
-  cout<<"quel est le prix HT de votre voiture?";
+  cout<<"quel est le prix HT de la voiture?";
   cin>> prixVoitureHT;
   double tauxTVA = 0.2;
   double prixTTC = prixVoitureHT*(1+tauxTVA);
