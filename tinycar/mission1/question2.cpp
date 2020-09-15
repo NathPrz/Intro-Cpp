@@ -8,8 +8,8 @@ using namespace std;
 int main()
 {
   int prixVoitureHT =9800;
-  int tauxTVA = 9800/100*20;
-  int prixTTC = prixVoitureHT + tauxTVA;
+  double tauxTVA = 0.2;
+  double prixTTC = prixVoitureHT*(1+tauxTVA);
     cout << "Le prix totale de la voiture TTC est " ;
     cout << prixTTC ;
 }
