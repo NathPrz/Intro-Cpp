@@ -20,7 +20,7 @@ int main(){
   cin>> prixVoitureHT;
   double tauxTVA = 0.2;
   double prixTTC = prixVoitureHT*(1+tauxTVA);
-    cout << "Le prix totale d'une voiture " + marqueVoiture + " model " + modelVoiture + " TTC est " ;
+    cout << "Le prix d'une voiture " + marqueVoiture + " model " + modelVoiture + " TTC est " ;
     cout << prixTTC ;
     }
     
