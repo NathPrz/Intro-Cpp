@@ -19,25 +19,21 @@ int main(){
 
       cout<< "Bienvenu" << endl;
       
-      string marqueVoiture;{
+      string marqueVoiture;
       cout<<"Quelle est la marque de la voiture?";
       cin>> marqueVoiture;
-      }
       
-      string modelVoiture;{
+      string modelVoiture;
       cout<<"Quel est le model de la voiture?";
       cin>> modelVoiture;
-      }
       
-      int prixVoitureHT;{
+      int prixVoitureHT;
       cout<<"Quel est le prix HT de votre voiture?";
       cin>> prixVoitureHT;
-      }
       
-      int voitureElectrique;{
+      int voitureElectrique;
       cout<<"La voiture est elle electrique? (Entrez 0 = non, 1 = oui)";
       cin>> voitureElectrique;
-      }
 
       //Prix TTC. Taux TVA different si la voiture est éléctrique.
       double prixTTC;
