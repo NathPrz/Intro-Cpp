@@ -16,6 +16,5 @@ int main(){
     cout << accesoires[indice] << endl;
     cout << prixHT[indice] << endl;
   }
-  getchar();
   return 0;
 }
