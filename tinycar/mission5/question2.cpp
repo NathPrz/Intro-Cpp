@@ -3,14 +3,12 @@
 #include <string>
 using namespace std;
 
-//Fonction qui calcule le TVA pour chaque accesoire.//
+//Fonction qui calcule et rajoute la TVA pour chaque accesoire.//
 double calculePrixTTC(double prixHT)
 {
     double tva = 0.2;
-    return prixHT * (1 + tva); 
+    return prixHT * (1 + tva);
 }
-
-//Programme pour gérer un panier
 
 int main()
 {
@@ -25,8 +23,8 @@ int main()
     cin >> quantiteDAccesoires;
 
     accesoires = new string[quantiteDAccesoires];
-    prixHT = new (nothrow) double[quantiteDAccesoires];
-    prixTTC = new (nothrow) double[quantiteDAccesoires];
+    prixHT = new double[quantiteDAccesoires];
+    prixTTC = new double[quantiteDAccesoires];
 
     //Boucle qui demande à l'utilisateur les accesoires et leur prix pour inisialiser les tableaux
     cout << "Veuillez indiquer l'information qui suive pour chaque accesoire:" << endl;
@@ -38,7 +36,8 @@ int main()
         getline(cin, accesoires[indice]);
         cout << "Prix HT: " << endl;
         cin >> prixHT[indice];
-        prixTTC[indice]=calculePrixTTC(prixHT[indice]);
+        //Appel de la fonction pour calculer le prix TTC, avec le prixHT en paramètre
+        prixTTC[indice] = calculePrixTTC(prixHT[indice]);
     }
 
     //Suppression de pointeurs
