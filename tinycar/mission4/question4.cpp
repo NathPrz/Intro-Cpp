@@ -17,7 +17,7 @@ int main()
     cin >> quantiteDAccesoires;
 
     accesoires = new string[quantiteDAccesoires];
-    prixHT = new (nothrow) double[quantiteDAccesoires];
+    prixHT = new double[quantiteDAccesoires];
 
     //Boucle qui demande à l'utilisateur les accesoires et leur prix pour inisialiser les tableaux
     cout << "Veuillez indiquer l'information qui suive pour chaque accesoire:" << endl;
@@ -40,7 +40,7 @@ int main()
     }
 
     //Boucle qui additionne le prix des accesoires
-    double prixHTDuPanier = 0.0;
+    double prixHTDuPanier = 0;
     for (int indicePrixHT = 0; indicePrixHT < quantiteDAccesoires; indicePrixHT++)
     {
         prixHTDuPanier += prixHT[indicePrixHT];         
